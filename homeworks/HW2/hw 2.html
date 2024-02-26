@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Масиви та об'єкти:
+    // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+    let it = [1, 10, 'asd', -3, true, 12, 'word', false, 24, 100]
+    console.log(it[0]);
+    console.log(it[1]);
+    console.log(it[2]);
+    console.log(it[3]);
+    console.log(it[4]);
+    console.log(it[5]);
+    console.log(it[6]);
+    console.log(it[7]);
+    console.log(it[8]);
+    console.log(it[9]);
+
+    // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+    let a = {title: 'asd', pageCount: 200, genre: 'fantastic'};
+    let b = {title: 'qwe', pageCount: 300, genre: 'action'};
+    let c = {title: 'kolobok', pageCount: 10, genre: 'horror'};
+    // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+    let book = {title: 'asd', pageCount: 200, genre: 'fantastic', authors: [name = 'Vasya', age = 30]};
+    let book1 = {title: 'qwe', pageCount: 300, genre: 'action', authors: [name = 'Ivan', age = 35]};
+    let book2 = {title: 'kolobok', pageCount: 10, genre: 'horror', authors: [name = 'Petya', age = 40]};
+    // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+    let users = [
+        {name: 'Vasya', userName: 'Vasya30', password: 1234},
+        {name: 'Petya', userName: 'Petya40', password: 5678},
+        {name: 'Ivan', userName: 'Ivan-iii', password: 1289},
+        {name: 'Oleg', userName: 'Oleg15', password: 1346},
+        {name: 'Sergii', userName: 'Sergii-seruy', password: 9852},
+        {name: 'Oleksii', userName: 'Oleksii84', password: 6542},
+        {name: 'Olya', userName: 'Olya-Olya', password: 1597},
+        {name: 'Mariya', userName: 'Mariya12', password: 3578},
+        {name: 'Oksana', userName: 'Oksana555', password: 65482},
+        {name: 'Natali', userName: 'Natali666', password: 5684123}
+    ]
+    let user0 = users [0];
+    let user1 = users [1];
+    let user2 = users [2];
+    let user3 = users [3];
+    let user4 = users [4];
+    let user5 = users [5];
+    let user6 = users [6];
+    let user7 = users [7];
+    let user8 = users [8];
+    let user9 = users [9];
+
+    console.log(user0.password);
+    console.log(user1.password);
+    console.log(user2.password);
+    console.log(user3.password);
+    console.log(user4.password);
+    console.log(user5.password);
+    console.log(user6.password);
+    console.log(user7.password);
+    console.log(user8.password);
+    console.log(user9.password);
+    //
+    // Логічні розгалуження:
+    //     - Є змінна х, якій ви надаєте довільне числове значення.
+    //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+    let x = +prompt('a');
+    if (x != 0) {
+        console.log('Вірно')
+    } else {
+        console.log('Невірно')
+    }
+    // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+    // (в першу, другу, третю или четверту частину години).
+    let time = +prompt('enter number from 0 to 59');
+    if (time >= 0 && time <= 14) {
+        console.log('first quarter');
+    } else if (time >= 15 && time <= 29) {
+        console.log('second quarter');
+    } else if (time >= 30 && time <= 44) {
+        console.log('third quarter');
+    } else if (time >= 45 && time <= 59) {
+        console.log('fourth quarter');
+    } else {
+        console.log('!!!');
+    }
+
+    // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+    let day = +prompt('enter day');
+    if (day >= 1 && day <= 10) {
+        console.log('перша декада');
+    } else if (day >= 11 && day <= 20) {
+        console.log('друга декада');
+    } else if (day >= 21 && day <= 31) {
+        console.log('третя декада');
+    } else {
+        console.log('так не буває')
+    }
+    // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається
+    // інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+    let z = +prompt('type a day')
+    switch (z) {
+        case 1:
+            console.log('monday');
+            break;
+        case 2:
+            console.log('tuesday');
+            break;
+        case 3:
+            console.log('wednesday');
+            break;
+        case 4:
+            console.log('thursday');
+            break;
+        case 5:
+            console.log('friday');
+            break;
+        case 6:
+            console.log('saturday');
+            break;
+        case 7:
+            console.log('sunday');
+            break;
+    }
+
+    //     - Користувач вводить або має два числа.
+    //         Потрібно знайти та вивести максимальне число з тих двох .
+    //         Також потрібно врахувати коли введені рівні числа.
+    //
+    //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
+    //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy
+    //         (хибноподібні, тобто приводиться до false)
+    //     let x = false || 'default';
+    //             console.log(x);
+
+    //
+    //     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+    let coursesAndDurationArray = [
+        {title: 'JavaScript Complex', monthDuration: 5},
+        {title: 'Java Complex', monthDuration: 6},
+        {title: 'Python Complex', monthDuration: 6},
+        {title: 'QA Complex', monthDuration: 4},
+        {title: 'FullStack', monthDuration: 7},
+        {title: 'Frontend', monthDuration: 4}
+    ];
+    if (coursesAndDurationArray[0].monthDuration > 5) {
+        console.log('Супер')
+    }
+    if (coursesAndDurationArray[1].monthDuration > 5) {
+        console.log('Супер')
+    }
+    if (coursesAndDurationArray[2].monthDuration > 5) {
+        console.log('Супер')
+    }
+    if (coursesAndDurationArray[3].monthDuration > 5) {
+        console.log('Супер')
+    }
+    if (coursesAndDurationArray[4].monthDuration > 5) {
+        console.log('Супер')
+    }
+    if (coursesAndDurationArray[5].monthDuration > 5) {
+        console.log('Супер')
+    }
+</script>
+</body>
+</html>
