@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+    // function area (a, b){
+    //     let result = a * b;
+    //     return result;
+    // }
+    // let result = area(10, 20);
+    // console.log(result)
+    // - створити функцію яка обчислює та повертає площу кола з радіусом r
+    // function circle (r){
+    //     let result = Math.PI * r*r;
+    //     return result;
+    // }
+    // let result = circle (10);
+    // console.log(result)
+    // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+    // function cillin (h, r){
+    //     let result = Math.PI * (r*r * h);
+    //     return result;
+    // }
+    // let result = cillin (10, 10);
+    // console.log(result)
+    // - створити функцію яка приймає масив та виводить кожен його елемент
+    // function someArray (array){
+    //     for (let arrayElement of array) {
+    //         console.log(arrayElement);
+    //     }
+    // }
+
+    // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+    // function someText(p){
+    //     document.write(`
+    //     <p>${p}</p>
+    //     `)
+    // }
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+    // function someList(text){
+    //     document.write(`
+    //     <ul>
+    //         <li>${text}</li>
+    //         <li>${text}</li>
+    //         <li>${text}</li>
+    //     </ul>
+    //     `)
+    // }
+    // someList(`hello`);
+
+    // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+
+    // function someList(text, count){
+    //     for (let i = 0; i < count; i++) {
+    //         document.write(`
+    //     <ul>
+    //         <li>${text}</li>
+    //         <li>${text}</li>
+    //         <li>${text}</li>
+    //     </ul>
+    //     `)
+    //     }
+    // }
+    // someList(`hello`, 10);
+
+    // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+
+    // function primitivArr(arr){
+    //     for (let arrElement of arr) {
+    //         document.write(`
+    //         <ul>
+    //             <li>${arrElement}</li>
+    //         </ul>
+    //         `);
+    //     }
+    // }
+
+    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
+    // Для кожного об'єкту окремий блок.
+
+    // function asd(arr){
+    //     for (let arrElement of arr) {
+    //         document.write(`
+    //         <div>
+    //         id: ${arrElement.id};
+    //         name: ${arrElement.name};
+    //         age: ${arrElement.age}
+    //         </div>`)
+    //     }
+    // }
+
+    // - створити функцію яка повертає найменьше число з масиву
+    // let arrNum = [452,300,3,4,15,0,1000,5,2,-5,6,7];
+    // function minNum (arr){
+    //     let min = arr[0];
+    //     for (let item of arr) {
+    //         if (item < min){
+    //            min = item;
+    //         }
+    //     }
+    //     return console.log(min);
+    // }
+    // minNum(arrNum);
+
+
+    // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його.
+    // Приклад sum([1,2,10]) //->13
+    //
+    // let mas = [1,2,5,10]
+    //
+    // function sum(mas) {
+    //     let result = 0;
+    //     for (let ma of mas) {
+    //         let a = result += ma;
+    //     }
+    //     console.log(result);
+    //     return result;
+    // }
+    // sum(mas)
+
+    // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відаовідних індексах
+    // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
+    //         ============== З ЦИМ ЗАВДАННЯМ Я НЕ ВПОРАВСЯ(((=========
+        // let mass = [11,22,33,44];
+        // function swap(arr, index1, index2) {
+        //     let in1 = index1;
+        //     let in2 = index2;
+        //     for (let item of arr) {
+        //         if (in1 === 0){
+        //             arr[0] = arr[1];
+        //         }else if (in2 === 1){
+        //             arr[1] = arr[0]
+        //         }
+        //
+        //     }
+        //     console.log(mass);
+        // }
+        // swap(mass,0,1)
+
+
+    // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
+    // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+
+    // let cash = [{currency:'USD',value:40},{currency:'EUR',value:42}];
+    // function exchange (sumUAH,currencyValues,currencyValue) {
+    //     for (let item of cash) {
+    //         if (item.currency === currencyValue){
+    //             let res = sumUAH / item.value;
+    //             console.log(res);
+    //         }
+    //     }
+    // }
+    // exchange(3000,cash,`EUR`)
+
+</script>
+</body>
+</html>
